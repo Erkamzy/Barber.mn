@@ -98,6 +98,10 @@ export default function BarberDetailScreen() {
         </Text>
 
         <View style={styles.underline} />
+
+        <View style={styles.locationContainer}>
+          <Ionicons name="location-outline" size={20} color="#004080" />
+          <Text style={styles.locationText}>
             Хаяг: {barberData?.address || 'Хаяг оруулаагүй байна'}
           </Text>
         </View>
