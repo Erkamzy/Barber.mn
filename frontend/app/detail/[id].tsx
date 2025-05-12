@@ -11,6 +11,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+
 const API_URL = 'http://127.0.0.1:8000/apibarber/';
 const base_URL = 'http://127.0.0.1:8000/';
 
@@ -88,9 +89,10 @@ export default function BarberDetailScreen() {
             <TouchableOpacity style={styles.button} onPress={() => router.push(`/service/${barbershopid}`)}>
               <Text style={styles.buttonText}>Үйлчилгээ</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => router.push(`/about/${id}`)}>
               <Text style={styles.buttonText}>Бидний тухай</Text>
             </TouchableOpacity>
+
           </View>
         </View>
       </ImageBackground>
